@@ -56,7 +56,7 @@ Os algoritmos criptográficos podem ser implementados em hardware (para performa
 \subsubsection{Criptografia Simétrica}
 
 
-A criptografia simétrica é conhecida por criptografia de chave secreta. Este modelo usa uma única chave que é partilhada entre o emissor e o receptor figura, \ref{cripto1}. Desta forma, a chave que é usada para cifrar é a mesma que é usada para decifrar. Quando  uma pessoa  quer  se  comunicar  de  forma  segura  com  outra  pessoa, as maquinas já devem conhecer a chave secreta ou a chave utilizada para cifrar a mensagem deve ser enviada pela rede. Este processo é chamado de “distribuição de chaves”. Algoritmos que usam criptografia simétrica tendem a ser mais rápidos, no entanto não são tão seguros, uma vez que a chave usada para cifrar a informação é partilhada entre as várias máquinas da rede. A maior dificuldade do método é a distribuição segura das chaves\cite{BURNETT:02}.
+A criptografia simétrica é conhecida por criptografia de chave secreta. Este modelo usa uma única chave que é partilhada entre o emissor e o receptor FIGURA, \ref{cripto1}. Desta forma, a chave que é usada para cifrar é a mesma que é usada para decifrar. Quando  uma pessoa  quer  se  comunicar  de  forma  segura  com  outra  pessoa, as maquinas já devem conhecer a chave secreta ou a chave utilizada para cifrar a mensagem deve ser enviada pela rede. Este processo é chamado de “distribuição de chaves”. Algoritmos que usam criptografia simétrica tendem a ser mais rápidos, no entanto não são tão seguros, uma vez que a chave usada para cifrar a informação é partilhada entre as várias máquinas da rede. A maior dificuldade do método é a distribuição segura das chaves\cite{BURNETT:02}.
 
  \begin{figure}[h!]
 	\centering
@@ -92,7 +92,7 @@ IDEA      & 128                                                      & \begin{ta
 \subsubsection{Criptografia Assimétrica}
 
 A  criptografia assimétrica,conhecida  por  criptografia de  chaves  públicas, faz p  uso  de  pares  de  chaves  para criptografar ou descriptografar. As duas chaves  são  relacionadas  através  de  um  processo  matemático, usando  funções  unidirecionais para a codificação da informação. A chave pública que, como o nome já diz, qualquer um pode conhecer e ter acesso, é usada para cifrar, enquanto a chave privada, é usada para decifrar. Uma mensagem cifrada com uma chave pública somente poderá ser decifrada com o uso da chave privada com a qual está  relacionada. O método  traz segurança, pois não é necessário compartilhar a chave privada. Em contrapartida, o tempo de processamento de mensagens com criptografia assimétrica é muito maior do que com criptografia simétrica \cite{BURNETT:02}. 
-Na Figura \ref{cripto2} é demonstrado o processo.
+Na FIGURA \ref{cripto2} é demonstrado o processo.
 
  \begin{figure}[h!]
 	\centering
@@ -103,7 +103,7 @@ Na Figura \ref{cripto2} é demonstrado o processo.
 
 \subsubsection{Algoritmos de Criptografia Assimétrica}
 
-A grande dificuldade deste sistema é a  complexidade  no  desenvolvimento  dos algoritmos que devem reconhecer a dupla de chaves existentes e relacionar as  mesmas  no  momento  certo,  o  que reverte num  grande  poder  de  processamento computacional para este trabalho \cite{STALLINGS:14}. A  analise  dos  principais  algoritmos  de  chave pública ou criptografia assimétrica de forma resumida na Tabela \ref{tab2}.
+A grande dificuldade deste sistema é a  complexidade  no  desenvolvimento  dos algoritmos que devem reconhecer a dupla de chaves existentes e relacionar as  mesmas  no  momento  certo,  o  que reverte num  grande  poder  de  processamento computacional para este trabalho \cite{STALLINGS:14}. A  analise  dos  principais  algoritmos  de  chave pública ou criptografia assimétrica de forma resumida na TABELA \ref{tab2}.
 
 \begin{table}[h!]
 \caption{Principais algoritmos de chaves públicas ou criptografia assimétrica}
@@ -122,8 +122,58 @@ ElGamal                                                    & \begin{tabular}[c]{
 % CRIPTOGRAFIA SIMÉTRICA – utiliza apenas uma chave. Esta chave é utilizada tanto para criptografar quanto para descriptografar a mensagem.
 % CRIPTOGRAFIA ASSIMÉTRICA – Utiliza duas chaves. Uma pública e outra privada. A mensagem criptografada por uma chave publica só pode ser descriptografada por uma chave privada correspondente.
 
-the author names references in brackets, e.g. \cite{knuth:84},
- and \cite{smith:99}.
+Nesse capitulo será apresentado a utilização da comunicação criptografada para internet das coisas no mercado e ambiente usual, apresentando uma contextualização dos principais perigos em sistemas conectados a internet das coisas.
+
+\subsection{Contexto} 
+
+A internet das coisas trará muitas mudanças à nível global, transformando a forma como nos relacionamos com o mundo e impactando diretamente nossas vidas, o meio ambiente, os negócios e nossa segurança.
+
+
+Suponha uma casa em que todos os sistemas estejam conectados, desde os eletrodomésticos à rede elétrica até os dados do dono da casa. Sendo assim, se um hacker encontrar uma vulnerabilidade em algum desses sistemas e conseguir invadir a geladeira, por exemplo, o mesmo poderá usá-la de porta de entrada para acessar outros sistemas dentro da casa. O grande problema por trás é que tendo acesso aos sistemas da casa, o hacker poderá roubar dados, alterar informações e danificar o ambiente. Isso pode ter inúmeros impactos e problemas ao dono da casa.
+As coisas conectadas podem servir tanto como aliadas quanto alvos em ataques, mais o grau de risco em que os sistemas estão expostos aumenta à medida que mais dispositivos são conectados à rede.
+
+
+A partir dessas discussões percebe-se que a interne das coisas possibilita um mar de oportunidades que deve ser observado de perto por todas as indústrias e mercados. Entretanto, para que as coisas conectadas tragam mais benefícios, é necessário que as questões de segurança estejam presentes em todas as etapas de implantação dessa tecnologia.
+
+\subsection{Ferramenta De Mercado}
+
+Com os aplicativos sendo parte da rotina dos usuários, visto que o uso é bastante frequente, é mais do que normal que as empresas invistam em segurança. Neste contexto, acaba figurando a criptografia dos apps. Nos dias atuais, o mecanismo foi empregado de modo a proteger os dados dos usuários, sobretudo de invasores. O sistema Android, por exemplo, já oferece essa tecnologia em sua linguagem de programação e aplicativos como o WhatsApp, Telegram, e Followzup por exemplo, são  alguns dos que usam a criptografia.
+
+No geral, o sistema do aplicativo codifica informações do próprio aparelho, de modo a impedir que hackers invadam os dados e as usem de modo indevido. Resumindo, há uma espécie de chave colocada pelo próprio usuário que impede o uso desses dados. Essa proteção vai muito além das senhas de desbloqueio do aparelho, já que são mantidas por aplicativos.
+
+
+\subsection{Followzup}
+
+O Followzup é um serviço gratuito para envio de mensagens de texto criptografadas para celulares e outros dispositivos móveis. As mensagens são enviadas em background, a partir de sistemas e websites com o auxílio de APIs, disponíveis em PHP, Java, Ruby, Perl, Python,  C\# e .NET. As APIs são simples de usar, e com apenas 1 linha de comando a aplicação pode enviar uma mensagem para o celular de um ou mais usuários \cite{followzup}.
+ 
+Além de enviar, os websites Internet também podem receber mensagens dos usuários, originadas a partir de seus dispositivos móveis. A comunicação entre sistemas e dispositivos móveis por meio do Followzup é criptografada com os padrões AES e RSA, e o protocolo aberto do serviço permite o desenvolvimento de APIs para outras linguagens, assim como o desenvolvimento de APPs para diferentes modelos de dispositivos móveis \cite{followzup}.
+
+Exemplos de uso:
+\begin{itemize}
+    \item Monitorar a atividade de usuários em sistemas e websites;
+    \item Monitorar e enviar alertas sobre ocorrências em sistemas e equipamentos;
+    \item Enviar notícias, dicas, avisos e mensagens publicitárias;
+    \item Receber mensagens de solicitações dos usuários;
+    \item Solicitar respostas de confirmação dos usuários;
+    \item Enviar mensagens associadas a “links” externos;
+    \item Informar e confirmar agendamento de compromissos;
+    \item Informar a realização transações comerciais e financeiras;
+    
+\end{itemize}
+
+As mensagens enviadas por meio do Followzup são criptografadas com os protocolos AES e RSA, garantindo confidencialidade em todo o trajeto percorrido pela informação. Cada aplicação e cada dispositivo móvel possui seu próprio par de chaves assimétricas RSA, e apenas o webservice Followzup pode decriptografar e ter acesso ao conteúdo das requisições.
+
+
+Cada solicitação encaminhada ao serviço Followzup possui seu próprio número de sequência, garantindo maior segurança na comunicação entre sistemas e dispositivos. Com esse nível adicional de segurança, as requisições eventualmente interceptadas e reenviadas pela rede de acesso, são automaticamente consideradas inválidas pelo serviço \cite{followzup}.
+
+
+\section{Conclusão}
+
+A internet é uma grande rede onde milhares de informações se cruzam o tempo todo e nada impede, mesmo com toda a tecnologia, que certas mensagens possam ser capturadas enquanto circulam na web. Proteger as informações em trânsito é essencial para evitar que dados sigilosos de clientes, ou mensagens estratégicas acabem de posse de cibercriminosos ou pessoas mal-intencionadas.  O uso de dispositivos móveis é muito comum. Essas ferramentas possibilitam que os colaboradores acessem dados pessoais e de empresa por meio de qualquer link de internet. O que ocorre é que muitas vezes a navegação pode ser realizada a partir de uma rede pública, como bibliotecas, shoppings centers e outros ambientes que disponibilizam acesso à web. Esse tipo de rede facilita a captura, por parte de criminosos, de senhas, usuários e outros dados importantes que podem ser utilizados em uma futura invasão e roubo de informações. Ao criptografar esses envios apenas o destinatário poderá fazer uso da chave para verificar o conteúdo.
+
+
+Com a evolução da tecnologia, nada está seguro 100\% seguro. Temos como exemplo todas as metodologias e técnicas de criptografia que foram mostradas ao longo do item 2. Cedo ou tarde todas as chaves foram quebradas, ou seja, utilizar da criptografia não garante totalmente o roubo de dados, porém nenhuma outra técnica de segurança da informação é tão eficaz quanto a criptografia. Por isso, pode-se afirmar que mesmo que não se possa obter a total certeza de que seus dados não serão decifrados e roubados por hackers, utilizar da criptografia é a melhor forma de se proteger contra o vazamento.
+
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
